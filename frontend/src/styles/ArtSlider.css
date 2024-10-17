@@ -1,0 +1,68 @@
+.art-slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; /* Set a maximum width for the slider */
+  margin: 0 auto;
+  overflow: hidden; /* Hide any overflow from the slider */
+}
+
+.art-slider {
+  width: 100%;
+  height: 400px; /* You can set this to a fixed height or make it more dynamic */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.art-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensures the image fits within the div without distortion */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.slider-arrow.left {
+  left: 10px;
+}
+
+.slider-arrow.right {
+  right: 10px;
+}
+
+.slider-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.art-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}

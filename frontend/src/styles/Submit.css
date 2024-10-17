@@ -1,0 +1,77 @@
+.submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("/images/submit.jpg") no-repeat center center/cover;
+    position: relative;
+  }
+  .submit-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adding opacity for a blur effect */
+    z-index: 1;
+  }
+  .submit-form-wrapper {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  .submit-form-wrapper h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .submit-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .submit-form input,
+  .submit-form textarea,
+  .submit-form select {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+  .submit-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  .submit-form input:focus,
+  .submit-form textarea:focus,
+  .submit-form select:focus {
+    outline: none;
+    border-color: #ff6b6b;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  .submit-form button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #eb5757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-form button:hover {
+    background-color: #f64b4b;
+  }
+  .submit-form button:active {
+    background-color: #ff4848;
+  }
